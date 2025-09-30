@@ -20,13 +20,13 @@ jobs:
 
       - name: Download latest powershell script
         run: |
-          mkdir -p ps-csc-script
-          curl -L -o ps-csc-script/FARIA_PS_CSC_SCRIPT.ps1 https://raw.githubusercontent.com/dfaria5/faria-ps-csc-script/main/FARIA_PS_CSC_SCRIPT.ps1
+          mkdir -p files/scripts
+          curl -L -o files/scripts/FARIA_PS_CSC_SCRIPT.ps1 https://raw.githubusercontent.com/dfaria5/faria-ps-csc-script/main/FARIA_PS_CSC_SCRIPT.ps1
 
       - name: Commit & push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add ps-csc-script/FARIA_PS_CSC_SCRIPT.ps1
+          git add files/scripts/FARIA_PS_CSC_SCRIPT.ps1
           git diff-index --quiet HEAD || git commit -m "Update script from main repo"
           git push origin main
