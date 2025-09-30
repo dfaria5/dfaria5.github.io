@@ -1,5 +1,8 @@
 name: Update PowerShell Custom Setup Config Script
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: '* * * * *' # every hour
