@@ -11,8 +11,10 @@ jobs:
     steps:
       - name: Checkout Pages repo
         uses: actions/checkout@v3
+        with:
+          ref: main
 
-      - name: Download latest script
+      - name: Download latest powershell script
         run: |
           mkdir -p ps-csc-script
           curl -L -o ps-csc-script/FARIA_PS_CSC_SCRIPT.ps1 https://raw.githubusercontent.com/dfaria5/faria-ps-csc-script/main/FARIA_PS_CSC_SCRIPT.ps1
