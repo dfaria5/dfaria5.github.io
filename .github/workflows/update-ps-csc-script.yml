@@ -14,7 +14,7 @@ jobs:
 
       - name: Download latest script
         run: |
-          mkdir -p tool
+          mkdir -p ps-csc-script
           curl -L -o ps-csc-script/FARIA_PS_CSC_SCRIPT.ps1 https://raw.githubusercontent.com/dfaria5/faria-ps-csc-script/main/FARIA_PS_CSC_SCRIPT.ps1
 
       - name: Commit & push
