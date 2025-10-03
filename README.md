@@ -1,2 +1,2 @@
 ### FARIA
-:cyclone: [https://dfaria5.github.io/](https://dfaria5.github.io/)
+:godmode: [https://dfaria5.github.io/](https://dfaria5.github.io/)
